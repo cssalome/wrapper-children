@@ -5,9 +5,7 @@ const MenuItems = ({ menuItems }) => {
   return(
       <>
         {menuItems.map((item) => (
-         <p>
-           {item.name}
-         </p>
+          <p key={ item }>{item}</p>
         ))}
       </>
   );
